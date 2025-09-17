@@ -30,7 +30,7 @@
 }
 
 .stripe-element {
-    background: white;
+    background: rgb(209, 86, 4);
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -203,7 +203,7 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    border: 2px solid #f3f3f3;
+    border: 2px solid #d25405;
     border-top: 2px solid #4CAF50;
     border-radius: 50%;
     animation: spin 1s linear infinite;
