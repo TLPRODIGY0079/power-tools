@@ -5,15 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SwiftDelivery - Success</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Simple animation for the checkmark */
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 4px #34d39940;
+      animation: pop 0.4s ease forwards;
+    }
+    .checkmark svg {
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: draw 0.5s ease forwards 0.4s;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes draw {
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center h-screen">
 
-  <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
-    <h1 class="text-3xl font-bold text-green-600 mb-4">✅ Success!</h1>
-    <p class="mb-6 text-gray-700">Your action has been completed successfully.</p>
+  <div class="bg-white shadow-xl rounded-2xl p-10 w-full max-w-md text-center animate-fade-in">
     
-    <a href="index.html" class="block w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 mb-4">Go to Home</a>
-    <a href="login.html" class="block w-full border border-gray-300 py-2 rounded-lg hover:bg-gray-200">Login Again</a>
+    <!-- Animated checkmark -->
+    <div class="checkmark mx-auto mb-6 bg-green-100 flex items-center justify-center">
+      <svg viewBox="0 0 24 24" class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" stroke-width="3">
+        <path d="M5 13l4 4L19 7"/>
+      </svg>
+    </div>
+
+    <h1 class="text-3xl font-bold text-green-600 mb-4">Success!</h1>
+    <p class="mb-6 text-gray-700">Your action was completed successfully.</p>
+    
+    <a href="index.html" class="block w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 mb-3 transition">Go to Home</a>
+    <a href="login.html" class="block w-full border border-gray-300 py-2 rounded-lg hover:bg-gray-100 transition">Login Again</a>
   </div>
 
 </body>

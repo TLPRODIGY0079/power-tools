@@ -12,19 +12,27 @@
   <nav class="bg-white shadow p-4 flex justify-between items-center">
     <h1 class="text-2xl font-bold text-blue-600">SwiftDelivery</h1>
     <div>
-     <a href="login.html" class="px-4 py-2 text-blue-600 hover:underline">Login</a>
-<a href="register.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Register</a>
+     <a href="login.html" class="px-6 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition duration-200">Login</a>
+<a href="register.html" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200">Register</a>
 
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-    <h2 class="text-4xl font-bold mb-4">Fast, Secure & Reliable Parcel Delivery</h2>
-    <p class="mb-6">Send your packages anywhere with confidence. Track in real-time and get instant delivery confirmations.</p>
-    <a href="#" class="px-6 py-3 bg-white text-blue-600 rounded-lg shadow hover:bg-gray-100">Start Shipping Now</a>
-    <a href="#" class="px-6 py-3 border border-white rounded-lg ml-4 hover:bg-blue-600">Learn More</a>
-  </section>
+ <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Fast, Secure & Reliable Parcel Delivery</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Send your packages anywhere with confidence. Track in real-time and get instant delivery confirmations.</p>
+            <div class="space-x-4">
+                <button onclick="showRegisterModal()" class="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition duration-200">
+                    Start Shipping Now
+                </button>
+                <button onclick="scrollToFeatures()" class="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-200">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
 
   <!-- Features -->
   <section class="max-w-5xl mx-auto py-16 grid md:grid-cols-3 gap-8 text-center">
