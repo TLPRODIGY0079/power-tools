@@ -105,7 +105,7 @@
 }
 
 .progress-labels span.completed {
-    color: #2196F3;
+    color: #f39f21;
 }
 
 /* GPS Tracking Styles */
@@ -182,11 +182,11 @@
 }
 
 .notification.info {
-    border-left: 4px solid #2196F3;
+    border-left: 4px solid #dc9c07;
 }
 
 .notification.info i {
-    color: #2196F3;
+    color: #efa20a;
 }
 
 .notification-close {
