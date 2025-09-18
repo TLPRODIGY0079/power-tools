@@ -1,4 +1,115 @@
-/* Enhanced CSS for Swift Delivery with new features */
+/* Enhanced CSS for Swift Delivery with Orange Theme */
+
+/* styles.css - PowerTools Orange Theme */
+
+/* Global theme colors */
+:root {
+  --orange-primary: #ea580c;  /* main orange */
+  --orange-dark: #c2410c;     /* darker orange */
+  --orange-light: #ffedd5;    /* pale orange for backgrounds */
+  --gray-dark: #1f2937;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: var(--orange-primary);
+  font-weight: bold;
+}
+.nav-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.nav-btn-outline {
+  color: var(--orange-primary);
+  border: 2px solid var(--orange-primary);
+}
+.nav-btn-outline:hover {
+  background: var(--orange-light);
+}
+.nav-btn-filled {
+  background: var(--orange-primary);
+  color: white;
+}
+.nav-btn-filled:hover {
+  background: var(--orange-dark);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(90deg, var(--orange-primary), var(--orange-dark));
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+/* Hero buttons */
+.hero-btn-white {
+  background: white;
+  color: var(--orange-primary);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.hero-btn-white:hover {
+  background: #f3f3f3;
+}
+.hero-btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.hero-btn-outline:hover {
+  background: white;
+  color: var(--orange-primary);
+}
+
+/* Features */
+.feature-icon {
+  background: var(--orange-light);
+  color: var(--orange-primary);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  font-size: 1.5rem;
+}
+
+/* Steps */
+.step-circle {
+  background: var(--orange-primary);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+/* CTA button */
+.cta-btn {
+  background: var(--orange-primary);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.cta-btn:hover {
+  background: var(--orange-dark);
+}
+
 
 /* Payment Modal Styles */
 .payment-container {
@@ -7,7 +118,7 @@
 }
 
 .payment-summary {
-    background: #c56907;
+    background: #c56907; /* primary orange */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -30,7 +141,7 @@
 }
 
 .stripe-element {
-    background: rgb(209, 86, 4);
+    background: #d25405; /* dark orange */
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -63,7 +174,7 @@
 
 .progress-fill {
     height: 100%;
-    background: #4CAF50;
+    background: #f39f21; /* orange progress */
     transition: width 0.3s ease;
 }
 
@@ -101,11 +212,11 @@
 }
 
 .progress-labels span.active {
-    color: #4CAF50;
+    color: #c56907; /* active orange */
 }
 
 .progress-labels span.completed {
-    color: #f39f21;
+    color: #f39f21; /* completed orange */
 }
 
 /* GPS Tracking Styles */
@@ -113,7 +224,7 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #4CAF50;
+    background: #c56907; /* orange pulse */
     border-radius: 50%;
     margin-right: 8px;
     animation: pulse 2s infinite;
@@ -158,7 +269,7 @@
 }
 
 .notification.success {
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #4CAF50; /* keep green for success */
 }
 
 .notification.success i {
@@ -174,19 +285,19 @@
 }
 
 .notification.warning {
-    border-left: 4px solid #ff9800;
+    border-left: 4px solid #f39f21; /* orange warning */
 }
 
 .notification.warning i {
-    color: #ff9800;
+    color: #f39f21;
 }
 
 .notification.info {
-    border-left: 4px solid #dc9c07;
+    border-left: 4px solid #c56907; /* orange info */
 }
 
 .notification.info i {
-    color: #efa20a;
+    color: #c56907;
 }
 
 .notification-close {
@@ -203,8 +314,8 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    border: 2px solid #d25405;
-    border-top: 2px solid #4CAF50;
+    border: 2px solid #d25405; /* orange base */
+    border-top: 2px solid #f39f21; /* orange spin */
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
